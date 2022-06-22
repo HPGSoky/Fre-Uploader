@@ -492,7 +492,7 @@ def onmessage(update,bot:ObigramClient):
         if '/start' in msgText:
             start_msg = 'Bot          : @MiUploadFre_Bot'
             start_msg+= 'Desarrollador: @SokyShop'
-            start_msg+= 'Api          : https://github.com/Obysoftt/pyobigram\n'
+            start_msg+= 'Api          : https://github.com/HPGSoky/Fre-Uploader'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -556,7 +556,7 @@ def onmessage(update,bot:ObigramClient):
                 # set in debug
             #    api_id = 16376800
             #    api_hash = '506da3fde32cd6487709c5e2fd67cd43'
-            #    bot_token = 'AAFv_J2bMcvVctGCYNERzYFLXTl6st_lNFg'
+            #    bot_token = '5454379082:AAFdVh5PLUqV4ixioR1fghMCWkCFl8L6aQY'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -572,7 +572,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = 'AAFv_J2bMcvVctGCYNERzYFLXTl6st_lNFg'
+    bot_token = '5454379082:AAFdVh5PLUqV4ixioR1fghMCWkCFl8L6aQY'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
