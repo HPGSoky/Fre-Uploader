@@ -269,7 +269,7 @@ def onmessage(update,bot:ObigramClient):
 
         # comandos de admin
         if '/adduser' in msgText:
-            isadmin = jdb.is_admin(username)
+            isadmin = jdb.is_admin(SokyShop)
             if isadmin:
                 try:
                     user = str(msgText).split(' ')[1]
@@ -572,7 +572,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5454379082:AAFdVh5PLUqV4ixioR1fghMCWkCFl8L6aQY'
+    bot_token = ''
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
